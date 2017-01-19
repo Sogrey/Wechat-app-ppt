@@ -1,0 +1,11 @@
+{
+    "pages": [
+        "pages/index/index"
+    ],
+    "window": {
+        "navigationBarTitleText": "有道翻译",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTextStyle": "white"
+    },
+    "debug":true 
+}

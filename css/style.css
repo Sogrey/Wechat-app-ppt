@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.quote{padding: 10px;background: #efefef;margin: 3px;font-size: 18px;}
+.quote .comefrom{display: block;text-align: right;}
+.quote_inline{background: #efefef;}
+
+.emp{font-weight: 600;}
+pre.textSmall code{background: #efefef;padding:3px 100px ;}
+.scroll_view {height: 80%;overflow-y: auto;}

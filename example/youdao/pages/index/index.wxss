@@ -1,0 +1,17 @@
+/* pages/index/index.wxss */
+.page{
+    font-family: "PingFang SC","Microsoft Yahei";
+    padding: 5px;
+}
+.src{
+    font-size: 14px;
+}
+.src input{
+    padding: 5px;
+    border:1px #eee solid;
+    border-radius: 3px;
+}
+.src button{
+    margin: 5px 0;
+}
+.basic,.web{margin: 10px 0 0;font-size: 14px}

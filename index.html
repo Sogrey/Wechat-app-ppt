@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>微信小程序</title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="img/icon.ico" />
+		<link rel="stylesheet" href="shower/styles/screen-16x10.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body class="shower list">
+		<header class="caption">
+			<h1>微信小程序</h1>
+			<p></p>
+		</header>
+		<section class="slide" id="cover">
+			<h2>微信小程序</h2>
+			<p>2017-01-19</p>
+			<img src="img/icon.png" >
+			<style>
+				#cover {
+					background: #76ac61;
+					text-align: center;
+				}
+				
+				#cover h2 {
+					margin: 30px 0 0;
+					color: #FFF;
+					text-align: center;
+					font-size: 70px;
+				}
+				
+				#cover p {
+					margin: 10px 0 0;
+					text-align: center;
+					color: #FFF;
+					font-style: italic;
+					font-size: 20px;
+				}
+				
+				#cover img {
+					width: 160px;
+					height: 160px;
+					margin: 100px auto;
+				}
+			</style>
+		</section>
+		<section class="slide">
+			<h2>微信小程序是什么</h2>
+			<p>『微信小程序』是微信即公众号之后推出的一项服务。</p>
+			<p class="quote">我们提供了一种新的开放能力，开发者可以快速地开发一个小程序。小程序可以在微信内被便捷地获取和传播，同时具有出色的使用体验。<br/>
+				<span class="comefrom">——微信内测界面</span>
+			</p>
+			<p class="quote">小程序是一种不需要下载安装即可使用的应用，它实现了应用『触手可及』的梦想，用户扫一扫或搜一搜即可打开应用。也体现了『用完即走』的理念，用户不关心是否安装太多应用的问题。应用将无处不在，随时可用，但又无需安装卸载。  <br/>
+				<span class="comefrom">——张小龙</span>
+			</p>
+		</section>
+		<section class="slide">
+			<h2>微信小程序能做什么</h2>
+			<p>根据目前现有的资料来看，它能做大部分APP应用能做到的事情，微信“小程序”已经为开发者提供了表单、导航、地图、媒体和位置，重力等一系列的开发组件，让他们在微信里构建一个功能完善的H5应用，比如说可以用媒体类的组件做一个音乐播放器，视频播放网站之类的APP，利用重力感应开发赛车游戏等等，又或是开发一个购物应用，这些都可以通过小程序来实现。</p>
+		</section>
+		<section class="slide">
+			<h2>微信小程序优缺点</h2>
+			<p>优点：</p>
+			<ul type="circle">
+				<li>比传统的 Hybird 应用在操作体验上，它具有更快、更流畅的应用体验，摆脱混合应用对浏览器性能的依赖且能够调用系统原生接口，有一定的数据缓存能力。</li>
+				<li>比 React Native 类应用，更轻量级。</li>
+				<li>比 Native App ，则胜在开发周期短、投入成本低、使用便捷，且依托微信庞大的用户基础和粘性，可以迅速引流，验证产品模式和用户需求。</li>
+			</ul>
+			<p>缺点：</p>
+			<p class=note>因为一些安全和其它方面的考虑，小程序的能力被禁锢了。</p>
+			<ul type="circle">
+				<li>目前限制应用包大小为 1024 kb 。</li>
+				<li>微信开放接口 API 较少。</li>
+				<li>仅限于小应用的能力，想要实现复杂应用能力上还不足。</li>
+				<li>在多层级使用场景以及需要跳转类的需求上劣势明显。</li>
+			</ul>
+			<style>
+				ul {}
+				
+				ul li {
+					font-size: 18px;
+					line-height: 24px;
+				}
+			</style>
+		</section>
+		<section class="slide">
+			<h2>具体限制</h2>
+			<ul>
+				<li>不支持 HTML。WXML 语法与 HTML 有差异，CSS 选择器不支持级联。框架并非运行在浏览器中，所以 JavaScript 在 web 中一些能力都无法使用，如 document，window 等。</li>
+				<li>源码包大小不能超过 1M，单次request 传输数据最大 1M。</li>
+				<li>MINA 实现的 TabBar 最多 5 个 tab，wx.navigateTo 可推入后台的页面最多 5 层，超过则不能打开新界面。</li>
+				<li>没有 WebView ，自带 View 暂不支持图文混排。</li>
+				<li>不支持 A 标签，无法打开普通网页。</li>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>体验微信小程序</h2>
+			<img src="img/Screenshot_2017-01-19-20-52-04-89.png" width="200" height="350" />
+			<img src="img/Screenshot_2017-01-19-20-52-14-23.png" width="200" height="350" />
+			<img src="img/Screenshot_2017-01-19-20-52-42-11.png" width="200" height="350"  />
+			<img src="img/Screenshot_2017-01-19-20-53-04-27.png" width="200" height="350"  />
+		</section>
+		<section class="slide">
+			<h2>微信小程序开发</h2>
+			<img src="img/wechat_app_demo.png" width="377" height="457"  />
+		</section>
+		<section class="slide">
+			<h2>微信小程序存在不足</h2>
+			<ul>
+				<li>微信小程序这类Web App的用户体验问题，内置在微信中，其加载速度媲美App应该有很大难度</li>
+				<li>微信小程序使用的是微信帐号登陆，虽然省去了注册烦恼，但也意味你的微信号将会被附加越来越多的个人隐私信息</li>
+				<li>微信小程序的入口，目前微信对公众号入口的做法是放在聊天界面顶部，如果小程序的入口也是类似设计，那就意味着用户搜索关键词后，可能只关注前几个小程序，大量小程序仍然很难得到展示空间</li>
+				<li>小程序内置于微信，依附于微信，推广和营销将会受到更多限制</li>
+				<li>不支持 A 标签，无法打开普通网页。</li>
+			</ul>
+			
+		</section>
+		<section class="slide">
+			<h2>总而结之</h2>
+			<div class="scroll_view">
+				<p>微信小程序的出现，的确可以减轻智能手机的存储空间负担，减少用户下载、注册App等烦恼，甚至在没有WiFi的情况下可以带来更便捷的用户体验。但是，微信小程序目前只能取代部分低频App。对于启动频率较高的主流应用，用户选择App的可能性更高些。</p>
+			</div>
+			<style>
+				ul li span{
+					color: #76AC61;
+					font-size: 18px;
+				}
+			</style>
+		</section>
+		<section class="slide" id="picture">
+			<h2>THE END</h2>
+			<p id="end_tip">Thanks for listening!</p>
+			<style>
+				#picture {
+					background: #76ac61;
+					text-align: center;
+				}
+				
+				#picture h2 {
+					color: #FFF;
+				}
+				
+				#picture p {
+					color: #FFF;
+					font-size: larger;
+				}
+			</style>
+		</section>
+		<!--
+        	作者：408270653@qq.com
+        	时间：2016-04-01
+        	描述：角标
+        -->
+		<p class="badge">
+			<a href="https://github.com/Sogrey" target="_blank">by Sogrey</a>
+		</p>
+		<!--
+        	作者：408270653@qq.com
+        	时间：2016-04-01
+        	描述：进度
+        -->
+		<div class="progress"></div>
+		<script src="shower/shower.min.js"></script>
+
+	</body>
+
+</html>

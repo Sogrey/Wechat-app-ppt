@@ -1,0 +1,42 @@
+<view class="page">
+  <view class="src">
+
+    <!-- 输入框 -->
+    <input type="text" bindchange="inputTextChanged" placeholder="请输入要翻译的文字..." />
+
+    <!-- 按钮 -->
+    <button type="primary" bindtap="doTranslate">立即翻译</button>
+
+    <!-- Loading -->
+    <loading hidden="{{hidden}}">
+      加载中...
+    </loading>
+  </view>
+  <view>
+
+    <!-- 释义 -->
+    <view>
+      <text>{{resData.translation}}</text>
+    </view>
+
+    <!--基本释义-->
+    <view class="basic">
+      <view wx:if="{{resData.basic.explains}}">
+        <view>释义：</view>
+      </view>
+      <block wx:key="key1" wx:for-items="{{resData.basic.explains}}" wx:for-item="item">
+        <view>{{item}}</view>
+      </block>
+    </view>
+
+    <!--网络释义-->
+    <view class="web">
+      <view wx:if="{{resData.web}}">
+        <view>网络释义：</view>
+      </view>
+      <block wx:key="key2" wx:for-items="{{resData.web}}" wx:for-item="item">
+        <view>{{item.key}}:{{item.value}}</view>
+      </block>
+    </view>
+  </view>
+</view>
